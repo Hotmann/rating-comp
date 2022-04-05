@@ -1,0 +1,45 @@
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 1.6;
+  background-color: $color-neutral-very-dark-blue;
+
+  @include respond(phone) {
+    //width < 375px
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+  }
+}
+
+.heading {
+  color: $color-neutral-white;
+  font-size: 24px;
+
+  @include respond(phone) {
+    font-size: 22px;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  color: $color-neutral-light-grey;
+  font-weight: 20;
+  margin: 2rem 0;
+}
+
+.rating-selected {
+  border: none;
+  display: inline-block;
+  height: 4rem;
+  border-radius: 3rem;
+  background-color: $color-neutral-medium-grey;
+  color: $color-primary-orange;
+  margin: 2rem 0;
+  padding: 1rem;
+
+  @include respond(phone) {
+    height: 5rem;
+  }
+}
