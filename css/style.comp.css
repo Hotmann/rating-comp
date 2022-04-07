@@ -169,4 +169,5 @@ body {
   bottom: 0.5rem; }
 
 .attribution a {
-  color: #3e52a3; }
+  color: #3e52a3;
+  text-decoration: none; }
