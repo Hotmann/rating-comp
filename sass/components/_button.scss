@@ -1,0 +1,54 @@
+.btn {
+  font-family: inherit;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.9rem;
+  cursor: pointer;
+
+  &-rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 1.5rem 0;
+
+    &-num {
+      width: 65px;
+      height: 65px;
+      background-color: darken($color-neutral-medium-grey, 30%);
+      color: $color-neutral-light-grey;
+
+      @include respond(phone) {
+        width: 53px;
+        height: 53px;
+      }
+
+      &:hover {
+        background-color: $color-neutral-medium-grey;
+        color: $color-neutral-white;
+      }
+    }
+  }
+
+  &-submit {
+    margin-bottom: 0.6rem;
+    &-rat {
+      width: 100%;
+      height: 50px;
+      text-transform: uppercase;
+      background-color: $color-primary-orange;
+      color: $color-neutral-white;
+      letter-spacing: 0.25rem;
+      transition: all 0.5s ease-in-out;
+
+      @include respond(phone) {
+        height: 35px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $color-neutral-white;
+        color: $color-primary-orange;
+      }
+    }
+  }
+}

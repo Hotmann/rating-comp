@@ -1,0 +1,45 @@
+.section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 29%;
+
+  @include respond(phone) {
+    max-width: 95%;
+  }
+
+  &-box {
+    width: 37rem;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 2rem;
+    background-color: $color-neutral-dark-blue;
+
+    @include respond(phone) {
+      //width < 375px
+      width: 50rem;
+    }
+  }
+
+  &-thanks {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}

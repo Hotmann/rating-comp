@@ -1,0 +1,24 @@
+.icon-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin: 1rem 0 2.5rem 0;
+  padding: 0;
+  background-color: darken($color-neutral-medium-grey, 30%);
+
+  @include respond(phone) {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.icon-thank-you {
+  margin-top: 2rem;
+
+  @include respond(phone) {
+    margin: 3rem;
+  }
+}
